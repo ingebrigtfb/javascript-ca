@@ -1,0 +1,1531 @@
+
+body{
+    background-color: #1A1A1A;
+    margin: 0;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 100%;
+    font-family: 'Roboto' , sans-serif;
+}
+
+h2 {
+    color: #fafafa; 
+
+}
+
+h1 {
+    color: #fafafa; 
+}
+
+p {
+    color: #fafafa;
+}
+
+
+/*/////////////////////////*/
+/*////////// HEADER /////////*/
+/*/////////////////////////*/
+
+header {
+    background-color: #1a1a1a;
+    height: 120px;
+    border-bottom: solid 1px #fafafa;
+}
+
+.header-logo {
+    height: 80px;
+    margin: 30px 25px 25px 20px;
+}
+
+header > .icons {
+  font-size: 30px;
+  margin: -60px 10px 0 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+
+.icons i {
+    margin: 0 10px; 
+    color: #ff9900;
+}
+
+/*/////////////////////////*/
+/*/////// Nav header /////*/
+/*/////////////////////////*/
+
+
+nav {
+    display: none;
+    position: absolute;
+    top: 121px;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+    background-color: #1A1A1A99;
+}
+
+#hamburger-menu {
+    display: none;
+}
+
+#hamburger-menu:checked ~ nav {
+    display: block;
+}
+
+
+.nav-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 50px 0 0 0px; 
+}
+
+
+.nav-cont a {
+    font-size: 28px;
+    border-radius: 5px;
+    margin: 10px 0;
+    padding-top: 5px;
+    width: 300px;
+    height: 40px;
+    border: none;
+    background-color: #ff9000; 
+    color: #fafafa;
+    cursor: pointer;
+    text-decoration: none; 
+}
+
+
+/*/////////////////////////*/
+/*////////// FOOTER ///////*/
+/*/////////////////////////*/
+
+footer {
+    height: 150px;
+    color: #fafafa;
+    background-color: #1a1a1a;
+    width: 100%;
+    font-size: 12px;
+    font-weight: 400;
+    border-top: solid 1px #fafafa; 
+}
+
+.all-footers {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.foot-container ul {
+    list-style: none;
+    margin-right:  15px;
+    padding-left: 15px
+}
+
+.foot-container ul a {
+    color: #fafafa;
+    text-decoration: none;
+}
+
+.foot-container {
+    margin-top: 5px;
+    margin: 0 20px;
+}
+
+footer h2 {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 10px; 
+}
+
+footer p {
+    margin-left: 20px;
+    opacity: 0.5;
+}
+
+/*/////////////////////////*/
+/*/////// MAIN INDEX /////*/
+/*/////////////////////////*/
+
+.bar { 
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;    
+}
+
+#search-bar {
+    color: #fafafa; 
+}
+
+#search-bar::placeholder { 
+    color: #fafafa;
+    
+}
+
+#search-bar:focus { 
+    outline: none;
+}
+
+.bar input {
+    background-color: #ff900099;
+    border-radius: 10px;
+    border-style: none;
+    font-size: 14px;
+    text-align: left;
+    width: 145px;
+    height: 25px;
+    padding-left: 30px;
+}
+
+.fa-magnifying-glass { 
+    position: absolute;
+    color: #fafafa;
+    margin: 6px;
+}
+
+.add-container {
+    display: flex;
+    margin-top: 30px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.add {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    flex-direction: column;
+    text-align: center;
+    width: 393px;
+    height: 262px;
+    background: url(../Pictures/squareeyesaddpic.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.films-button a {
+    color: #fafafa;
+    background-color: #ff9000;
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: 20px;
+    border-radius: 15px;
+    padding: 10px 10px 10px 10px;
+    border-style: none;
+    cursor: pointer; 
+    text-decoration: none;
+}
+
+.add h1 {
+    font-weight: 800;
+    text-align: left;
+    color: #fafafa;
+    font-size: 20px;
+    max-width: 200px;
+}
+
+.orange-color {
+    color: #ff9000; 
+}
+
+.home-movies {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.home-movies h2 {
+    font-size: 28px;
+    font-weight: 800;
+}
+.movie-posters {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    width: 318px;
+    gap: 20px;
+}
+
+.movie-posters img {
+    width: 144px;
+    height: 215px;
+}
+
+
+/*/////////////////////////*/
+/*//// ALL MOVIES PAGE ///*/
+/*/////////////////////////*/
+
+.main-all-movies {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bar2 { 
+    display: flex;
+    justify-content: center;
+    margin-top: 30px; 
+}
+
+#search-bar2 {
+    color: #fafafa; 
+}
+
+#search-bar2::placeholder { 
+    color: #fafafa;
+}
+
+#search-bar2:focus { 
+    outline: none;
+}
+
+.bar2 input {
+    background-color: #ff900099;
+    border-radius: 10px;
+    border-style: none;
+    font-size: 14px;
+    text-align: left;
+    width: 145px;
+    height: 25px;
+    padding-left: 30px;
+}
+
+.fa-magnifying-glass { 
+    position: absolute;
+    color: #fafafa;
+    margin: 6px;
+}
+
+.select-genre {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-content: center;
+}
+
+.select-genre h1 {
+    margin-top: 40px;
+    font-size: 15px;
+}
+
+.dropdown label {
+    background-color: #ff9000;
+    color: #fafafa;
+    border-radius: 10px;
+    border-style: none;
+    cursor: pointer;
+    margin: 20px;
+    padding-right: 20px;
+    padding: 0 10px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.dropdown a {
+    display: block;
+    color: #fafafa;
+    text-decoration: none;
+}
+
+.dropdown-content {
+    position: absolute;
+    background-color: #1a1a1a; 
+    min-width: 70px;
+    display: none;
+}
+
+#dropdown-checkbox {
+    display: none;
+}
+
+#dropdown-checkbox:checked ~ .dropdown-content {
+    display: block;
+}
+
+.all-movies { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 50px;  
+}
+
+
+/*////////////////////////////*/
+/*/////Product detail page////*/
+/*////////////////////////////*/
+
+.main-productdetail {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+}
+
+.batman-product { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.batman-product h1 {
+    font-size: 20px;
+}
+
+.batman-background {
+    height: 453px;
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 121px;
+    z-index: -1;
+}
+
+.batman-background img {
+    width: 100%;
+    opacity: 0.2;
+
+}
+
+.batman-cover img {
+    width: 188.98px ;
+    height: 280.45px;
+    padding: 0 0 20px 0 ;
+    
+}
+
+.cart-button a {
+    color: #fafafa;
+    background-color: #ff9000;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 15px;
+    padding: 10px 20px 10px 20px;
+    border-style: none;
+    text-decoration: none;
+}
+
+
+.desctription-box { 
+    background-color: #282828;
+    width: 100%;
+    max-width: 812px;
+    height: 190px;
+    margin-top: 80px;
+    border-radius: 10px;
+}
+
+.desctription-box p { 
+    font-size: 14px;
+    font-weight: 200; 
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.batman-trailer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.batman-trailer h2 {
+    margin-top: 100px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+iframe {
+    margin-bottom: 100px;
+}
+
+
+/*////////////////////////////*/
+/*///// CHECKOUT PAGE ////////*/
+/*////////////////////////////*/
+
+.checkout-cont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.overlay-box-co {
+    background-color: #282828;
+    width: 338px;
+    height: 811px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    
+}
+
+.overlay-box-co h1 {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.overlay-box-co p {
+    font-size: 12px;
+    font-weight: 200;
+    
+}
+
+
+.checkout-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+
+#name, #card, #mmyy, #cvv, #fullname, #address, #zipcode, #city, #phone, #redeem,::placeholder {
+    text-align: center;
+    
+}
+
+#name, #card, #mmyy, #cvv, #fullname, #address, #zipcode, #city, #phone, #redeem input {
+    text-align: left;
+    
+}
+
+#fullname {
+    margin-top: -10px ;
+}
+
+#mmyy { 
+    margin-right: 10px;
+}
+
+#zipcode {
+    margin-right: 10px; 
+}
+
+#name, #card, #fullname, #address, #phone {
+    width: 299px;
+    height: 33px;
+    border-style: none;
+    outline-style: none;
+    border-radius: 10px;
+    background-color: #1A1A1A;
+    color: #fafafa;
+}
+
+#mmyy, #cvv, #zipcode, #city, #redeem {
+    width: 140px;
+    height: 33px;
+    border-style: none;
+    outline-style: none;
+    border-radius: 10px;
+    background-color: #1A1A1A;
+    color: #fafafa;   
+}
+
+.total-box {
+    background-color: #1A1A1A;
+    width: 299px;
+    height: 155px;
+    border-radius: 10px;
+}
+
+.upper-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.upper-info img {
+    width: 32px;
+    height: 48px;
+    padding: 10px 0 20px 0;
+}
+
+.upper-info p {
+    padding-top: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #d7d7d7;
+}
+
+.lower-info {
+    border-top: solid 1px white; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 150px;
+    padding-top: 20px; 
+}
+
+.lower-info p {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+.purchase-button { 
+    margin-top: 40px;
+}
+
+.purchase-button a {
+    color: #fafafa;
+    background-color: #ff9000;
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: 20px;
+    border-radius: 15px;
+    padding: 10px 10px 10px 10px;
+    border-style: none;
+    cursor: pointer; 
+    text-decoration: none; 
+}
+
+
+/*////////////////////////////*/
+/*// CHECKOUT SUCSESS PAGE ///*/
+/*////////////////////////////*/
+
+.sucsess-cont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay-box-cos { 
+    background-color: #282828;
+    width: 338px;
+    height: 830px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;    
+}
+
+.conf-text p {
+    font-size: 14px;
+    padding: 15px 15px 15px 15px;
+    margin: 6px;
+    text-align: left;
+}
+.overlay-box-cos i { 
+    color: #33ff00;
+    font-size: 70px;
+    
+}
+
+.overlay-box-cos h1 {
+    font-size: 22px;
+}
+
+.total-box2 {
+    background-color: #1A1A1A;
+    width: 299px;
+    height: 155px;
+    border-radius: 10px;   
+}
+
+.upper-info2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.upper-info2 img {
+    width: 32px;
+    height: 48px;
+    padding: 10px 0 20px 0;
+}
+
+.upper-info2 p {
+    padding-top: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #d7d7d7;
+}
+
+.lower-info2 {
+    border-top: solid 1px white; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 150px;
+    padding-top: 20px; 
+}
+
+.lower-info2 p {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+/*////////////////////////*/
+/*/////ABOUT US PAGE/////*/ 
+/*////////////////////////*/
+
+.main-about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 10px 10px 10px;
+}
+.main-about img {
+    width: 354px;
+    height: 236px;
+}
+
+.main-about h1 {
+    font-size: 24px;
+}
+
+.main-about p {
+    color:#fafafa;
+    font-size: 24px;
+    font-weight: 200;
+    display: flex;
+    text-align: left;
+    padding: 10px 40px 10px 55px;    
+}
+
+/*/////////////////////////*/
+/*/////CONTACT US PAGE/////*/ 
+/*/////////////////////////*/
+
+.body-contact-us {
+    background-image: url(/Pictures/photo\ family.jpg);
+}
+
+.main-contact {
+    background-color:rgb(26, 26, 26, 0.9);
+}
+
+.contact-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 10px 10px 10px;
+}
+ 
+.main-contact h1 {
+    color: white;
+    font-size: 24px;
+}
+
+.main-contact i {
+    color: #fafafa; 
+    font-size: 54px;
+}
+.main-contact p {
+    font-size: 24px;
+    font-weight: 200;
+    padding: 10px 30px 10px 30px;
+} 
+
+/*///////////////////*/
+/*/// COMING SOON ///*/
+/*///////////////////*/
+
+.coming-soon h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 36px;
+}
+
+.back-to-home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.back-to-home a {
+    color: #fafafa;
+    background-color: #ff9000;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 15px;
+    padding: 10px 10px 10px 10px;
+    border-style: none;
+    cursor: pointer; 
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+
+.coming-soon p {
+    font-size: 15px;
+    font-weight: 400;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+
+/*///////////////////////////*/
+/*// MEDIA QUARIES TABLET ///*/
+/*///////////////////////////*/
+
+@media screen and (min-width: 576px) {
+   
+    
+/*/////////////////////////*/
+/*//// HEADER TABLET //////*/
+/*/////////////////////////*/
+
+header {
+    height: 140px;
+}
+
+.header-logo {
+    height: 100px;
+    margin: 30px 25px 25px 20px;
+    
+}
+
+
+/*/////////////////////////*/
+/*/// Nav header TABLET ///*/
+/*/////////////////////////*/
+
+
+nav {
+    top: 141px;
+}
+
+/*/////////////////////////*/
+/*////// FOOTER TABLET ////*/
+/*/////////////////////////*/
+
+footer {
+    height: 170px;
+    height: 100%;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+
+
+footer h2 {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+
+/*///////////////////////////*/
+/*///// MAIN INDEX TABLET ///*/
+/*///////////////////////////*/
+
+
+.bar input {
+    font-size: 16px;
+    width: 300px;
+    height: 30px;
+    
+}
+
+.fa-magnifying-glass { 
+    margin: 8px;
+}
+.add {
+    width: 572px;
+    height: 380px; 
+}
+
+.films-button a {
+    font-size: 20px;
+}
+
+.add h1 {
+    font-size: 30px;
+    max-width: 300px;
+}
+
+.movie-posters {
+    justify-content: center;
+    gap: 20px;
+}
+.movie-posters img {
+    width: 218px;
+    height: 324px;
+}
+
+.home-movies h2 {
+    font-size: 38px;
+    font-weight: 800;
+}
+
+/*///////////////////////////////*/
+/*//// ALL MOVIES PAGE TABLET ///*/
+/*///////////////////////////////*/
+
+
+.bar2 input {
+    font-size: 16px;
+    width: 300px;
+    height: 30px;   
+}
+
+.fa-magnifying-glass { 
+    margin: 8px;
+}
+
+.select-genre h1 {
+    font-size: 18px;
+}
+
+.dropdown label {
+    padding: 2px 20px 2px 20px;
+    font-size: 18px;
+}
+
+/*///////////////////////////////////*/
+/*/////Product detail page TABLET////*/
+/*///////////////////////////////////*/
+
+.batman-product h1 {
+    font-size: 24px;
+}
+
+.batman-background {
+    height: 515px;
+    top: 141px;
+}
+
+
+.batman-cover img {
+    width: 218px;
+    height: 324px;
+    
+}
+
+.cart-button a {
+    font-size: 20px;  
+}
+
+.desctription-box p { 
+    font-size: 16px; 
+}
+
+
+.batman-trailer h2 {
+    font-size: 24px;
+}
+
+iframe {
+    width: 560px;
+    height: 308px;
+}
+
+
+/*///////////////////////////////////*/
+/*///// CHECKOUT PAGE TABLET ////////*/
+/*///////////////////////////////////*/
+
+#name, #card, #mmyy, #cvv, #fullname, #address, #zipcode, #city, #phone, #redeem,::placeholder {
+    font-size: 14px;
+}
+
+.overlay-box-co {
+    width: 400px;
+    height: 850px;
+}
+
+.overlay-box-co p {
+    font-size: 14px;
+}
+
+.overlay-box-co h1 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+
+#name, #card, #fullname, #address, #phone {
+    width: 361px;
+    height: 36px;  
+}
+
+#mmyy, #cvv, #zipcode, #city, #redeem {
+    width: 171px;
+    height: 36px;
+}
+
+.total-box {
+    width: 361px;
+    height: 158px;
+}
+
+.upper-info img {
+    width: 36px;
+    height: 52px;
+    
+}
+
+.upper-info p {
+    font-size: 16px;
+}
+
+.lower-info p {
+    font-size: 16px;
+}
+
+.purchase-button a {
+    font-size: 20px;
+}
+
+/*///////////////////////////////////*/
+/*// CHECKOUT SUCSESS PAGE TABLET ///*/
+/*///////////////////////////////////*/
+
+
+
+.overlay-box-cos { 
+    width: 400px;
+    height: 870px;
+}
+
+.conf-text p {
+    font-size: 16px;
+}
+.overlay-box-cos i { 
+    font-size: 75px;
+}
+
+.overlay-box-cos h1 {
+    font-size: 24px;
+    padding: 0 10px 0 10px;
+}
+
+.total-box2 {
+    width: 361px;
+    height: 158px;
+  
+}
+
+.upper-info2 img {
+    width: 36px;
+    height: 52px;
+}
+
+.upper-info2 p {
+    font-size: 16px;
+}
+
+.lower-info2 p {
+    font-size: 16px;
+    
+}
+
+/*//////////////////////////////*/
+/*//// ABOUT US PAGE TABLET ////*/ 
+/*//////////////////////////////*/
+
+.main-about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 10px 10px 10px;
+}
+
+.main-about img {
+    width: 404px;
+    height: 286px;
+    
+}
+
+.main-about h1 {
+    font-size: 26px;
+    
+}
+
+.main-about p {
+    font-size: 26px;
+    padding: 10px 55px 10px 55px;  
+}
+
+
+/*////////////////////////////////*/
+/*//// CONTACT US PAGE TABLET ////*/ 
+/*////////////////////////////////*/
+
+ 
+.main-contact h1 {
+    font-size: 26px;
+}
+
+.main-contact i {
+    font-size: 58px;
+}
+.main-contact p {
+    font-size: 26px; 
+}
+
+/*/////////////////////////////*/
+/*//// COMING SOON TABLET /////*/
+/*/////////////////////////////*/
+
+.coming-soon p {
+    font-size: 18px;
+    font-weight: 200;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.coming-soon h1 {
+    font-size: 40px;
+}
+
+.back-to-home a {
+    font-size: 18px;
+}
+}
+
+/*/////////////////////////*/
+/*/ DESKTOP MEDIA QUARIES /*/ 
+/*/////////////////////////*/
+
+@media screen and (min-width: 768px) {
+    
+
+/*/////////////////////////*/
+/*///// HEADER DESKTOP ////*/
+/*/////////////////////////*/
+
+header {
+    height: 140px;
+
+}
+
+.header-logo {
+    
+    height: 100px;
+    margin: 30px 25px 25px 20px;
+}
+
+/*/////////////////////////*/
+/*/// NAV HEADER DESKTOP //*/
+/*/////////////////////////*/
+
+nav {
+    display: block;
+    top: 100px;
+    left: 55%;
+    width: 60%;
+    height: auto;
+    position: absolute;
+    transform: translatex(-50%);
+    background: none;
+}
+
+.icons > label {
+    display: none;
+}
+
+.nav-cont {
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;    
+}
+.nav-cont a {
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    background: none;  
+}
+
+.nav-cont a:hover {
+    text-decoration: underline;  
+}
+
+/*/////////////////////////*/
+/*///// FOOTER DESKTOP ////*/
+/*/////////////////////////*/
+
+footer {
+    height: 170px;
+    height: 100%;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+footer h2 {
+    font-size: 24px;
+    font-weight: 600;   
+}
+
+/*/////////////////////////*/
+/*/// MAIN INDEX DESKTOP //*/
+/*/////////////////////////*/
+
+
+.bar input {
+    font-size: 18px;
+    width: 616px;
+    height: 35px;
+    padding-left: 30px;
+}
+
+.bar input::placeholder {
+    font-size: 18px;
+}
+
+.fa-magnifying-glass { 
+    margin: 9px;
+}
+
+.add {
+    width: 785px;
+    height: 524px;   
+}
+
+.films-button a {
+    font-size: 24px;
+}
+
+.add h1 {
+    font-size: 40px;
+    max-width: 400px;    
+}
+
+.home-movies h2 {
+    font-size: 40px;
+}
+.movie-posters {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+.movie-posters img {
+    width: 180px;
+    height: 286px;
+}
+
+/*////////////////////////*/
+/*// ALL MOVIES DESKTOP //*/
+/*////////////////////////*/
+
+.bar2 input {
+    font-size: 18px;
+    width: 616px;
+    height: 35px;
+}
+
+.bar2 input::placeholder {
+    font-size: 18px;
+}
+
+.fa-magnifying-glass { 
+    margin: 9px;
+}
+
+.select-genre h1 {
+    font-size: 22px;
+}
+
+.dropdown label {
+    padding: 4px 30px 4px 30px;
+    font-size: 20px;
+}
+
+/*////////////////////////////*/
+/*/////Product detail page////*/
+/*////////////////////////////*/
+
+.main-productdetail {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+}
+
+.batman-product h1 {
+    font-size: 36px;
+}
+
+.batman-background {
+    height: 550px;
+}
+
+.batman-cover img {
+    width: 239px ;
+    height: 378px;
+    
+}
+
+.cart-button a {
+    font-size: 24px;
+}
+
+.desctription-box { 
+    height: 210px;
+    margin-top: 150px;
+}
+
+.desctription-box p { 
+    font-size: 20px;
+}
+
+.batman-trailer h2 {
+    font-size: 30px;
+}
+
+iframe {
+    width: 750px;
+    height: 450px;
+}
+
+
+/*////////////////////////////*/
+/*///// CHECKOUT PAGE ////////*/
+/*////////////////////////////*/
+
+
+.overlay-box-co {
+    width: 800px;
+    height: 950px;
+}
+
+.overlay-box-co h1 {
+    font-size: 36px;
+}
+
+.overlay-box-co p {
+    font-size: 20px;    
+}
+
+
+#name, #card, #fullname, #address, #phone {
+    width: 520px;
+    height: 40px;
+}
+
+#mmyy, #cvv, #zipcode, #city, #redeem {
+    width: 251px;
+    height: 40px;  
+}
+
+.total-box {
+    width: 520px;
+    height: 160px; 
+}
+
+
+.upper-info img {
+    width: 42px;
+    height: 58px;
+    padding: 10px 0 20px 0;
+}
+
+.upper-info p {
+    padding-top: 5px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.lower-info {
+    gap: 170px;
+    padding-top: 5px; 
+}
+
+.lower-info p {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.purchase-button { 
+    margin-top: 40px;
+}
+
+.purchase-button a {
+    font-size: 28px;
+}
+
+/*///////////////////////////////////*/
+/*// CHECKOUT SUCSESS PAGE DESKTOP //*/
+/*///////////////////////////////////*/
+
+
+.overlay-box-cos { 
+    width: 800px;
+    height: 1000px;
+}
+
+.conf-text p {
+    font-size: 24px;
+    padding-left: 40px;
+    padding-right: 40px;
+    
+}
+.overlay-box-cos i { 
+    font-size: 85px;
+}
+
+.overlay-box-cos h1 {
+    font-size: 36px;
+    padding: 0 10px 0 10px;
+}
+
+.total-box2 {
+    width: 520px;
+    height: 160px;
+    margin-top: 30px;
+}
+
+.upper-info2 img {
+    width: 42px;
+    height: 58px;
+}
+
+.upper-info2 p {
+    font-size: 20px;
+}
+
+.lower-info2 p {
+    font-size: 20px;
+    
+}
+
+.lower-info2 {
+    gap: 170px;
+    padding-top: 5px; 
+}
+
+/*////////////////////////*/
+/*/////ABOUT US PAGE/////*/ 
+/*////////////////////////*/
+
+.main-about img {
+    width: 479px;
+    height: 319px;
+}
+
+.main-about h1 {
+    font-size: 36px;
+}
+
+.main-about p {
+    font-size: 28px;
+    padding: 10px 100px 10px 100px;
+    margin-bottom: 100px;    
+}
+
+/*////////////////////////////////*/
+/*//// CONTACT US PAGE DESKTOP ///*/ 
+/*////////////////////////////////*/
+
+ 
+.main-contact h1 {
+    font-size: 36px;
+}
+
+.main-contact i {
+    font-size: 65px;
+}
+
+.main-contact p {
+    font-size: 28px; 
+    padding-left: 100px;
+    padding-right: 100px;
+    
+}
+
+/*////////////////////////////*/
+/*//// COMING SOON DESKTOP ///*/
+/*////////////////////////////*/
+
+
+.coming-soon p {
+    font-size: 20px;
+    font-weight: 200;
+    padding-left: 100px;
+    padding-right: 100px; 
+}
+
+.coming-soon h1 {
+    font-size: 42px;
+}
+
+.back-to-home a {
+    font-size: 20px;
+}
+
+}
+
+/*////////////////////////*/
+/*///// 888px DESKTOP ////*/
+/*////////////////////////*/
+
+@media screen and (min-width: 888px) {
+    nav {
+        left: 50%;
+    }
+
+    .nav-cont a {
+        font-size: 24px;
+    }
+
+    .movie-posters img {
+        width: 200px;
+        height: 306px;
+    }
+} 
+
+/*////////////////////////*/
+/*//// 1198px DESKTOP ////*/
+/*////////////////////////*/
+
+@media screen and (min-width: 1198px) {
+  
+    footer {
+        padding: 0 15%;
+        width: auto; 
+    }
+
+    .movie-posters img {
+        width: 239px;
+        height: 378px;
+    }
+
+    .home-movies h2 {
+        font-size: 48px;
+    }
+
+    .movie-posters {
+        gap: 50px;   
+    }
+
+    .main-about p {
+        font-size: 28px;
+        padding: 10px 350px 10px 350px;    
+    }
+    .main-contact p {
+        font-size: 28px; 
+        padding-left: 300px;
+        padding-right: 300px;
+    }
+
+    body {
+        height: 1300px;
+    }
+
+    .coming-soon p {
+        font-size: 28px;
+        font-weight: 200;
+        padding-left: 150px;
+        padding-right: 150px;
+        
+    }
+}    
