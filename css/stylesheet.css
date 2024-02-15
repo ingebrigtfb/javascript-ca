@@ -119,6 +119,7 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    
 }
 
 .foot-container ul {
