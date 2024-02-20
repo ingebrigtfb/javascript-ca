@@ -236,30 +236,6 @@ footer p {
     color: #ff9000; 
 }
 
-.home-movies {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 50px;
-}
-
-.home-movies h2 {
-    font-size: 28px;
-    font-weight: 800;
-}
-.movie-posters {
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto;
-    width: 318px;
-    gap: 20px;
-}
-
-.movie-posters img {
-    width: 144px;
-    height: 215px;
-}
-
 
 /*/////////////////////////*/
 /*//// ALL MOVIES PAGE ///*/
@@ -269,95 +245,25 @@ footer p {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
 
-.bar2 { 
-    display: flex;
-    justify-content: center;
-    margin-top: 30px; 
-}
-
-#search-bar2 {
-    color: #fafafa; 
-}
-
-#search-bar2::placeholder { 
-    color: #fafafa;
-}
-
-#search-bar2:focus { 
-    outline: none;
-}
-
-.bar2 input {
-    background-color: #ff900099;
-    border-radius: 10px;
-    border-style: none;
-    font-size: 14px;
-    text-align: left;
-    width: 145px;
-    height: 25px;
-    padding-left: 30px;
-}
-
-.fa-magnifying-glass { 
-    position: absolute;
-    color: #fafafa;
-    margin: 6px;
-}
-
-.select-genre {
-    display: flex;
-    flex-direction: column;
-    justify-content: center; 
-    align-content: center;
-}
 
 .select-genre h1 {
     margin-top: 40px;
     font-size: 15px;
+    
 }
 
-.dropdown label {
-    background-color: #ff9000;
-    color: #fafafa;
-    border-radius: 10px;
-    border-style: none;
-    cursor: pointer;
-    margin: 20px;
-    padding-right: 20px;
-    padding: 0 10px;
-    font-size: 15px;
-    font-weight: 600;
+
+#movieList {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    
+
 }
 
-.dropdown a {
-    display: block;
-    color: #fafafa;
-    text-decoration: none;
-}
-
-.dropdown-content {
-    position: absolute;
-    background-color: #1a1a1a; 
-    min-width: 70px;
-    display: none;
-}
-
-#dropdown-checkbox {
-    display: none;
-}
-
-#dropdown-checkbox:checked ~ .dropdown-content {
-    display: block;
-}
-
-.all-movies { 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 100px;
-    margin-bottom: 50px;  
+.product-style img {
+    width: 214px;
+    height: 320px;
 }
 
 
@@ -856,19 +762,7 @@ footer h2 {
     max-width: 300px;
 }
 
-.movie-posters {
-    justify-content: center;
-    gap: 20px;
-}
-.movie-posters img {
-    width: 218px;
-    height: 324px;
-}
 
-.home-movies h2 {
-    font-size: 38px;
-    font-weight: 800;
-}
 
 /*///////////////////////////////*/
 /*//// ALL MOVIES PAGE TABLET ///*/
@@ -1203,17 +1097,6 @@ footer h2 {
     max-width: 400px;    
 }
 
-.home-movies h2 {
-    font-size: 40px;
-}
-.movie-posters {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-}
-.movie-posters img {
-    width: 180px;
-    height: 286px;
-}
 
 /*////////////////////////*/
 /*// ALL MOVIES DESKTOP //*/
@@ -1478,10 +1361,6 @@ iframe {
         font-size: 24px;
     }
 
-    .movie-posters img {
-        width: 200px;
-        height: 306px;
-    }
 } 
 
 /*////////////////////////*/
@@ -1495,18 +1374,6 @@ iframe {
         width: auto; 
     }
 
-    .movie-posters img {
-        width: 239px;
-        height: 378px;
-    }
-
-    .home-movies h2 {
-        font-size: 48px;
-    }
-
-    .movie-posters {
-        gap: 50px;   
-    }
 
     .main-about p {
         font-size: 28px;
