@@ -269,89 +269,6 @@ footer p {
 /*/////Product detail page////*/
 /*////////////////////////////*/
 
-.main-productdetail {
-    display: flex; 
-    flex-direction: column;
-    align-items: center;
-}
-
-.batman-product { 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.batman-product h1 {
-    font-size: 20px;
-}
-
-.batman-background {
-    height: 453px;
-    width: 100%;
-    overflow: hidden;
-    position: absolute;
-    top: 121px;
-    z-index: -1;
-}
-
-.batman-background img {
-    width: 100%;
-    opacity: 0.2;
-
-}
-
-.batman-cover img {
-    width: 188.98px ;
-    height: 280.45px;
-    padding: 0 0 20px 0 ;
-    
-}
-
-.cart-button a {
-    color: #fafafa;
-    background-color: #ff9000;
-    font-size: 15px;
-    font-weight: 600;
-    border-radius: 15px;
-    padding: 10px 20px 10px 20px;
-    border-style: none;
-    text-decoration: none;
-}
-
-
-.desctription-box { 
-    background-color: #282828;
-    width: 100%;
-    max-width: 812px;
-    height: 190px;
-    margin-top: 80px;
-    border-radius: 10px;
-}
-
-.desctription-box p { 
-    font-size: 14px;
-    font-weight: 200; 
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-.batman-trailer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
-}
-
-.batman-trailer h2 {
-    margin-top: 100px;
-    font-size: 20px;
-    font-weight: 600;
-}
-
-iframe {
-    margin-bottom: 100px;
-}
 
 
 /*////////////////////////////*/
@@ -790,39 +707,7 @@ footer h2 {
 /*/////Product detail page TABLET////*/
 /*///////////////////////////////////*/
 
-.batman-product h1 {
-    font-size: 24px;
-}
 
-.batman-background {
-    height: 515px;
-    top: 141px;
-}
-
-
-.batman-cover img {
-    width: 218px;
-    height: 324px;
-    
-}
-
-.cart-button a {
-    font-size: 20px;  
-}
-
-.desctription-box p { 
-    font-size: 16px; 
-}
-
-
-.batman-trailer h2 {
-    font-size: 24px;
-}
-
-iframe {
-    width: 560px;
-    height: 308px;
-}
 
 
 /*///////////////////////////////////*/
@@ -1127,47 +1012,6 @@ footer h2 {
 /*/////Product detail page////*/
 /*////////////////////////////*/
 
-.main-productdetail {
-    display: flex; 
-    flex-direction: column;
-    align-items: center;
-}
-
-.batman-product h1 {
-    font-size: 36px;
-}
-
-.batman-background {
-    height: 550px;
-}
-
-.batman-cover img {
-    width: 239px ;
-    height: 378px;
-    
-}
-
-.cart-button a {
-    font-size: 24px;
-}
-
-.desctription-box { 
-    height: 210px;
-    margin-top: 150px;
-}
-
-.desctription-box p { 
-    font-size: 20px;
-}
-
-.batman-trailer h2 {
-    font-size: 30px;
-}
-
-iframe {
-    width: 750px;
-    height: 450px;
-}
 
 
 /*////////////////////////////*/

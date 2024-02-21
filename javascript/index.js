@@ -8,7 +8,7 @@ async function collectMovies() {
     try {
         const api = `https://v2.api.noroff.dev/square-eyes`;
         const response = await fetch(api);
-        const data = await response.json ();
+        const data = await response.json();
 
         collection = data.data;
 

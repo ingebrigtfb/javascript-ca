@@ -6,11 +6,13 @@ export function listData(list, out) {
         <img src="${product.image.url}" alt="${product.name} Poster">
         <h2>${product.title}</h2>
         <p>Genre: ${product.genre}</p>
-        
         </a>`;
     }
     out.innerHTML = newDivs;
 }
+
+
+//Selector system
 
 export function filterMoviesByGenre(movies, genre) {
     if (genre === 'none') {
