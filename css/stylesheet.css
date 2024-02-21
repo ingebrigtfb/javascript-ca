@@ -157,7 +157,7 @@ footer p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+
 }
 
 .add-container {
@@ -222,15 +222,28 @@ footer p {
 .main-all-movies {
     display: flex;
     flex-direction: column; 
+    align-items: center;
 }
 
-.select-genre h1 {
-    margin: 40px 0;
-    font-size: 20px;
+.main-all-movies h1 {
+    margin: 40px 0 0 0;
+    font-size: 18px;
     display: flex;
     justify-content: center;
+}
 
-    
+#movieSelector {
+    margin: 20px 0 40px 0;
+    font-size: 14px;
+    background-color: #ff9000;
+    border-style: none;
+    border-radius: 10px;
+    color: white;
+    padding: 5px 5px;
+}
+
+#movieSelector:focus {
+    outline: none; /*For mobil*/
 }
 
 #movieList {
@@ -248,7 +261,7 @@ footer p {
 
 .product-style img {
     width: 180px;
-}
+} 
 
 
 /*////////////////////////////*/
