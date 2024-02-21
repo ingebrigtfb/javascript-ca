@@ -12,4 +12,12 @@ export function listData(list, out) {
     out.innerHTML = newDivs;
 }
 
+export function filterMoviesByGenre(movies, genre) {
+    if (genre === 'none') {
+        return movies;
+    } else {
+        return movies.filter(movie => movie.genre === genre);
+    }
+}
+
 

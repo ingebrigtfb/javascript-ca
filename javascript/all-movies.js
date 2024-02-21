@@ -1,8 +1,11 @@
-import { listData } from "./utils.js"
+import { listData, filterMoviesByGenre } from "./utils.js"
 
 
 let collection = [];
 const outElement = document.getElementById("movieList");
+const selector = document.getElementById("movieSelector");
+
+
 
 async function collectMovies() {
     try {
@@ -13,10 +16,25 @@ async function collectMovies() {
         collection = data.data;
 
         listData(collection, outElement);
+
+        selector.addEventListener('change', () => {
+            const selectedGenre = selector.value;
+            const filteredMovies = filterMoviesByGenre(collection, selectedGenre);
+            //console.log('Filtered movies', filteredMovies)
+            listData(filteredMovies, outElement);
+        });
+
     } catch(error) {
         console.error(`Could not fetch data...`, error)
         outElement.innerHTML = `Could not fetch data...`
     }
+
+
 }
 
 collectMovies();
+
+
+
+
+
