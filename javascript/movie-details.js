@@ -29,12 +29,16 @@ getMoviebyId();
 function movieDetailsPage(api, output) {
     let product = api; 
 
-    output.innerHTML = `<div class="product-style">
-    <img src="${product.image.url}" alt="${product.name} Poster">
+    output.innerHTML = `<div class="product-detail">
     <h2>${product.title}</h2>
+    <img src="${product.image.url}" alt="${product.name} Poster">
+    <p> ${product.price} NOK</p>
+    <button class="cart-button" id="${id}">Add to &#x1F6D2</button> 
     <p>Genre: ${product.genre}</p>
     <p>Description: ${product.description}</p>
-    </div>`;
+    </div>`; 
+    
 }
+
 
 

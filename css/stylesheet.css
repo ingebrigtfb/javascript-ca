@@ -260,7 +260,7 @@ footer p {
 
 }
 
-.product-style img {
+.product-style img, .product-detail img {
     width: 180px;
 } 
 
@@ -268,6 +268,33 @@ footer p {
 /*////////////////////////////*/
 /*/////Product detail page////*/
 /*////////////////////////////*/
+
+.main-productdetail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cart-button {
+    background-color: #ff9000;
+    color: white;
+    font-size: 15px;
+    font-weight: 800;
+    padding: 5px 5px;
+    border-radius: 10px;
+    text-decoration: none;
+    border-style: none;
+    margin: 20px 0;
+
+}
+
+.product-detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 100px;
+
+}
 
 
 
@@ -286,7 +313,7 @@ footer p {
 .overlay-box-co {
     background-color: #282828;
     width: 338px;
-    height: 811px;
+    height: 580px;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -416,6 +443,8 @@ footer p {
     cursor: pointer; 
     text-decoration: none; 
 }
+
+
 
 
 /*////////////////////////////*/
@@ -713,7 +742,6 @@ footer h2 {
 /*///////////////////////////////////*/
 /*///// CHECKOUT PAGE TABLET ////////*/
 /*///////////////////////////////////*/
-
 #name, #card, #mmyy, #cvv, #fullname, #address, #zipcode, #city, #phone, #redeem,::placeholder {
     font-size: 14px;
 }
@@ -1018,7 +1046,6 @@ footer h2 {
 /*///// CHECKOUT PAGE ////////*/
 /*////////////////////////////*/
 
-
 .overlay-box-co {
     width: 800px;
     height: 950px;
@@ -1078,6 +1105,7 @@ footer h2 {
 .purchase-button a {
     font-size: 28px;
 }
+
 
 /*///////////////////////////////////*/
 /*// CHECKOUT SUCSESS PAGE DESKTOP //*/

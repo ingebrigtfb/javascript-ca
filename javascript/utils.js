@@ -22,4 +22,11 @@ export function filterMoviesByGenre(movies, genre) {
     }
 }
 
+//Cart
+
+
+
+
+
+
 

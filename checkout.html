@@ -11,6 +11,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/da289bebbf.js" crossorigin="anonymous"></script>
+    <script type="module" src="./javascript/checkout.js" defer></script>
+    <script type="module" src="./javascript/utils.js" defer></script>
     <title>Checkout</title>
 </head>
 
@@ -27,7 +29,7 @@
             
         <div class="icons">
             <a href="./coming-soon.html"><i class="fa-solid fa-user"></i></a>
-            <a href="./checkout.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            <a href="./cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
             <label for="hamburger-menu">
                 <i class="fa-solid fa-bars"></i>
             </label>
@@ -46,65 +48,45 @@
             
     </header>
    
-<main class="checkout-cont">
-    <div class="overlay-box-co">
-            <h1>ENTER PAYMENT INFO</h1>
-            <p>Credit or Debit Card Information</p>
-        
-       <form action="submit" class="checkout-form">
-        
-                    <input type="text"  name="name" id="name" placeholder="CARD HOLDERS FULL NAME"> 
-                    <input type="text"  name="card" id="card" placeholder="CARD NUMBER"> 
-        
-                <div class="date-cvv">
-
-                    <input type="text"  name="MM/YY" id="mmyy" placeholder="MM/YY"> 
-        
-                    <input type="text"  name="CVV" id="cvv" placeholder="CVV"> 
-        
-                </div>
-                    <p>Billing Information</p>
-                    <input type="text"  name="fullname" id="fullname" placeholder="FULL NAME"> 
-        
-                    <input type="text"  name="address" id="address" placeholder="ADDRESS"> 
-        
-        
-                <div class="zip-city">
-                    <input type="text"  name="zipcode" id="zipcode" placeholder="ZIP CODE"> 
-        
-                    <input type="text"  name="city" id="city" placeholder="CITY"> 
-                </div>
-                    <input type="text"  name="phone" id="phone" placeholder="PHONE NUMBER"> 
+    <main class="checkout-cont">
+        <div class="overlay-box-co">
+                <h1>ENTER PAYMENT INFO</h1>
+                <p>Credit or Debit Card Information</p>
             
-
-            <div class="total-box">
-
-                <div class="upper-info">
-                    <p>x1</p>
-                    <p>$8.99</p>
-                    <p>THE BATMAN (2022)</p>
-                    <img src="./Pictures/Square_Eyes_Cover2.jpeg" alt="">
-                </div>
-
-                <div class="lower-info">
-                    <p>TOTAL</p>
-                    <p>$8.99</p>
-                </div>
-
-            </div>
-
-            <div class="input-line">
-                <input type="text"  name="redeem" id="redeem" placeholder="REDEEM CODE"> 
-            </div>
-
-        </form>
-       
-        <div class="purchase-button">
-        <a href="./checkout-sucsess.html">PURCHASE NOW</a>
-        </div>   
-        
-    </div> 
-</main>
+           <form action="submit" class="checkout-form">
+            
+                        <input type="text"  name="name" id="name" placeholder="CARD HOLDERS FULL NAME"> 
+                        <input type="text"  name="card" id="card" placeholder="CARD NUMBER"> 
+            
+                    <div class="date-cvv">
+    
+                        <input type="text"  name="MM/YY" id="mmyy" placeholder="MM/YY"> 
+            
+                        <input type="text"  name="CVV" id="cvv" placeholder="CVV"> 
+            
+                    </div>
+                        <p>Billing Information</p>
+                        <input type="text"  name="fullname" id="fullname" placeholder="FULL NAME"> 
+            
+                        <input type="text"  name="address" id="address" placeholder="ADDRESS"> 
+            
+            
+                    <div class="zip-city">
+                        <input type="text"  name="zipcode" id="zipcode" placeholder="ZIP CODE"> 
+            
+                        <input type="text"  name="city" id="city" placeholder="CITY"> 
+                    </div>
+                        <input type="text"  name="phone" id="phone" placeholder="PHONE NUMBER"> 
+            
+    
+            </form>
+           
+            <div class="purchase-button">
+            <a href="./checkout-sucsess.html">PURCHASE NOW</a>
+            </div>   
+            
+        </div> 
+    </main>
     
     
 <footer>
