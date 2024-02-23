@@ -37,11 +37,13 @@ function deleteFromCart(ClickedId) {
 
     localStorage.setItem('cart', JSON.stringify(updatedCart));
 
-    alert("Item is deleted");
+    //alert("Item is deleted");
+
+    location.reload();
 }
 
 document.addEventListener('click', function(event){
-    if (event.target.classList.contains('removeBtn')) {
+    if (event.target.classList.contains('deleteBtn')) {
         deleteFromCart(event.target.id);
     }
 });

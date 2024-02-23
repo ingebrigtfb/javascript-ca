@@ -62,6 +62,8 @@ export function listDataToCart(list, out) {
         <button class="deleteBtn" id="${product.id}"">Delete item</button>
         </div>`;
     }
+
+    
     out.innerHTML = newDivs;
 }
 
