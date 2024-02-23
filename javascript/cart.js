@@ -1,4 +1,4 @@
-import {  listDataToCart, cart } from "./utils.js"
+import {  listData, listDataToCart, cart } from "./utils.js"
 console.log("cart:", cart)
 
 const outElement = document.getElementById("cart-container"); 
@@ -18,13 +18,17 @@ async function inCart(cart) {
         if (filtered.length > 0) {
             listDataToCart (filtered, outElement);
         } else {
-            outElement.innerHTML = `There is nothing in your cart`;
+            outElement.innerHTML = `<p class="cart-message">There is nothing in your cart</p> 
+            <div class="all-movies-btn"><a href="./all-movies.html" id="allMoviesBtn">View all movies</a></div>`;
+
+
         }
 
     }catch (error) {
         console.error(error.message);
-        outElement.innerHTML = `Could not fetch data..`;
+        outElement.innerHTML = `<p>Could not fetch data..</p>`;
     }
+
 
 }
 

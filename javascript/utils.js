@@ -5,6 +5,7 @@ export function listData(list, out) {
         newDivs += `<a href=./product-detail.html?id=${product.id} class="product-style">
         <img src="${product.image.url}" alt="${product.name} Poster">
         <h2>${product.title}</h2>
+        <p> ${product.price} NOK</p>
         <p>Genre: ${product.genre}</p>
         </a>`;
     }
@@ -55,11 +56,11 @@ export function listDataToCart(list, out) {
     out.innerHTML = "";
     let newDivs = "";
     for (let product of list) {
-        newDivs += `<div class="product-style">
+        newDivs += `<div class="cart-style">
         <img src="${product.image.url}" alt="${product.name} Poster">
         <h2>${product.title}</h2>
         <p> ${product.price} NOK</p>
-        <button class="deleteBtn" id="${product.id}"">Delete item</button>
+        <div><button class="deleteBtn" id="${product.id}"">Delete item</button></div>
         </div>`;
     }
 

@@ -1,4 +1,4 @@
-import { listData } from "./utils.js"
+import { listDataToCart, listData } from "./utils.js"
 
 
 let collection = [];
