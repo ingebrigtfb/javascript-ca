@@ -1,4 +1,4 @@
-import {  listData, listDataToCart, cart } from "./utils.js"
+import {  listDataToCart, cart } from "./utils.js"
 console.log("cart:", cart)
 
 const outElement = document.getElementById("cart-container"); 

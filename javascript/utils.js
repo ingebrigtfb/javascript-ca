@@ -42,10 +42,11 @@ export function switchCart() {
         for (let i = 0; i < cart.length; i++) {
             if (cart[i] === this.id) cart.splice(i, 1);
         }
-        this.style.color = "black";
+        
     }else {
         cart.push(this.id);
-        this.style.color = "white";
+        this.style.backgroundColor = "white";
+        this.style.color = "black"
 
     }
     localStorage.setItem("cart", JSON.stringify(cart));
@@ -61,6 +62,21 @@ export function listDataToCart(list, out) {
         <h2>${product.title}</h2>
         <p> ${product.price} NOK</p>
         <div><button class="deleteBtn" id="${product.id}"">Delete item</button></div>
+        </div>`;
+    }
+
+    
+    out.innerHTML = newDivs;
+}
+
+export function listDataToConfirm(list, out) {
+    out.innerHTML = "";
+    let newDivs = "";
+    for (let product of list) {
+        newDivs += `<div class="cart-style">
+        <img src="${product.image.url}" alt="${product.name} Poster">
+        <h2>${product.title}</h2>
+        <p> ${product.price} NOK</p>
         </div>`;
     }
 
