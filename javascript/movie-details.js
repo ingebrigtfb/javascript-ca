@@ -1,4 +1,4 @@
-import { switchCart, movieDetailsPage } from "./utils.js";
+import {  movieDetailsPage } from "./utils.js";
 
 let productDetailPage = document.querySelector("main.main-productdetail");
 let idForMovie = [];

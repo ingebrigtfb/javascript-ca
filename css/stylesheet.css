@@ -327,9 +327,10 @@ footer p {
 .cart-style {
     display: flex;
     flex-direction: row;
-    max-width: 250px;
+    width: 250px;
     gap: 10px;
     align-items: center;
+    justify-content: center;
     margin: 30px auto;
 }
 
@@ -340,7 +341,7 @@ footer p {
 
 .cart-style p {
     font-size: 12px;
-    margin: 0 20px;
+    margin: 0 40px;
 }
 
 .cart-style h2 {
@@ -376,6 +377,16 @@ footer p {
     display: flex;
     justify-content: center;
 }
+
+.cart-price {
+    text-align: center;
+}
+
+.cart-price h2, .cart-price p {
+    font-size: 16px;
+    font-weight: 800;
+}
+
 
 
 /*////////////////////////////*/

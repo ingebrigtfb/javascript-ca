@@ -56,6 +56,7 @@ export function switchCart() {
 export function listDataToCart(list, out) {
     out.innerHTML = "";
     let newDivs = "";
+    let totalCart = 0;
     for (let product of list) {
         newDivs += `<div class="cart-style">
         <img src="${product.image.url}" alt="${product.name} Poster">
@@ -63,7 +64,13 @@ export function listDataToCart(list, out) {
         <p> ${product.price} NOK</p>
         <div><button class="deleteBtn" id="${product.id}"">X</button></div>
         </div>`;
+        totalCart += parseFloat(product.price);
     }
+    newDivs +=
+    `<div class="cart-price">
+    <h2>Total Price:</h2>
+    <p>${totalCart.toFixed(2)} NOK</p>
+    </div>`;
 
     
     out.innerHTML = newDivs;
