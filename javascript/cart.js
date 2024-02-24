@@ -61,17 +61,14 @@ document.addEventListener('click', function(event){
     }
 });
 
+
 form.addEventListener('submit', function (event) {
     event.preventDefault();
 
-        
+    console.log("Cart Length:", cart.length);
     if (cart.length > 0) {
-            window.location.href = "./checkout-sucsess.html";
-    } else {
-        alert("Add movies to the cart before proceeding.");
-            
-        }
-    
+        window.location.href = "./checkout-sucsess.html";
+    }    
 });
 
 
