@@ -1,5 +1,4 @@
-import { listDataToCart, listData } from "./utils.js"
-
+import {listData } from "./utils.js"
 
 let collection = [];
 const outElement = document.getElementById("movieTop");
@@ -17,6 +16,7 @@ async function collectMovies() {
         const selectedMovies = collection.filter(movie => movieIdsToDisplay.includes(movie.id));
 
         listData(selectedMovies, outElement);
+
     } catch(error) {
         console.error(`Could not fetch data...`, error);
         outElement.innerHTML = `Could not fetch data...`;
@@ -24,3 +24,11 @@ async function collectMovies() {
 }
 
 collectMovies();
+
+function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
+}

@@ -319,22 +319,28 @@ footer p {
 
 }
 
+.deleteBtn {
+    font-size: 20px;
+    max-width: 60px;
+}
 
 .cart-style {
     display: flex;
     flex-direction: row;
+    max-width: 250px;
     gap: 10px;
     align-items: center;
-    margin: 30px 20px;
+    margin: 30px auto;
 }
 
 .cart-style img {
-    width: 60px;
+    width: 50px;
 
 }
 
 .cart-style p {
-    font-size: 14px;
+    font-size: 12px;
+    margin: 0 20px;
 }
 
 .cart-style h2 {
@@ -351,7 +357,7 @@ footer p {
     border-radius: 10px;
 }
 
-.checkout-form {
+#checkout-form {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -455,13 +461,15 @@ footer p {
 }
 
 
-.purchase-button, .purchase-button a { 
+#purchase-btn { 
     margin: 20px 0;
     background-color: #ff9000;
     color: white;
     text-decoration: none;
     padding: 8px 5px;
     border-radius: 10px;
+    border-style: none;
+    cursor: pointer;
 
 }
 

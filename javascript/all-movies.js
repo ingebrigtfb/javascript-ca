@@ -1,6 +1,7 @@
 import { listData, filterMoviesByGenre } from "./utils.js"
 
 
+
 let collection = [];
 const outElement = document.getElementById("movieList");
 const selector = document.getElementById("movieSelector");
@@ -33,6 +34,9 @@ async function collectMovies() {
 }
 
 collectMovies();
+
+
+
 
 
 

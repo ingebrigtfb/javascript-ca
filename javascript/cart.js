@@ -1,7 +1,9 @@
 import {  listDataToCart, cart } from "./utils.js"
 console.log("cart:", cart)
 
-const outElement = document.getElementById("cart-container"); 
+const outElement = document.getElementById("cart-container");
+const purchaseButton = document.getElementById("purchase-btn"); 
+const form = document.getElementById("checkout-form");
 
 async function inCart(cart) {
     try {
@@ -17,10 +19,11 @@ async function inCart(cart) {
         console.log("Filtered Collection", filtered)
         if (filtered.length > 0) {
             listDataToCart (filtered, outElement);
+            purchaseButton.disabled = false;
         } else {
             outElement.innerHTML = `<p class="cart-message">There is nothing in your cart</p> 
             <div class="all-movies-btn"><a href="./all-movies.html" id="allMoviesBtn">View all movies</a></div>`;
-
+            purchaseButton.disabled = true;
 
         }
 
@@ -33,6 +36,8 @@ async function inCart(cart) {
 }
 
 inCart(cart); 
+
+purchaseButton.disabled = true;
 
 function deleteFromCart(ClickedId) {
     const cart = JSON.parse(localStorage.getItem('cart')) || [];
@@ -50,6 +55,23 @@ document.addEventListener('click', function(event){
     if (event.target.classList.contains('deleteBtn')) {
         deleteFromCart(event.target.id);
     }
+
+    if (event.target.id === 'purchase-btn' && purchaseButton.disabled) {
+        event.preventDefault();
+    }
+});
+
+form.addEventListener('submit', function (event) {
+    event.preventDefault();
+
+        
+    if (cart.length > 0) {
+            window.location.href = "./checkout-sucsess.html";
+    } else {
+        alert("Add movies to the cart before proceeding.");
+            
+        }
+    
 });
 
 

@@ -61,7 +61,7 @@ export function listDataToCart(list, out) {
         <img src="${product.image.url}" alt="${product.name} Poster">
         <h2>${product.title}</h2>
         <p> ${product.price} NOK</p>
-        <div><button class="deleteBtn" id="${product.id}"">Delete item</button></div>
+        <div><button class="deleteBtn" id="${product.id}"">X</button></div>
         </div>`;
     }
 
@@ -104,10 +104,6 @@ export function movieDetailsPage(api, output) {
 
     }
 }
-
-
-
-
 
 
 
