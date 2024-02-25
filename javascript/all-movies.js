@@ -5,6 +5,10 @@ const outElement = document.getElementById("movieList");
 const selector = document.getElementById("movieSelector");
 
 async function collectMovies() {
+
+if (outElement !== "none") {
+    outElement.innerHTML = `<div class="loading">Loading...</div>`;
+
   try {
     const api = `https://v2.api.noroff.dev/square-eyes`;
     const response = await fetch(api);
@@ -24,6 +28,7 @@ async function collectMovies() {
     console.error(`Could not fetch data...`, error);
     outElement.innerHTML = `Could not fetch data...`;
   }
+}
 }
 
 collectMovies();

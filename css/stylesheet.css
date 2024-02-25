@@ -20,6 +20,14 @@ p {
   color: #fafafa;
 }
 
+.loading {
+  text-align: center;
+  color: white;
+  font-size: 24px ;
+  font-weight: 800;
+  margin-top: 80px; 
+}
+
 /*/////////////////////////*/
 /*////////// HEADER /////////*/
 /*/////////////////////////*/
@@ -310,7 +318,7 @@ footer p {
 .cart-style {
   display: flex;
   flex-direction: row;
-  width: 250px;
+  max-width: 300px;
   gap: 10px;
   align-items: center;
   justify-content: center;

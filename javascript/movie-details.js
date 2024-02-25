@@ -9,6 +9,10 @@ let id = argum.get("id");
 console.log(id);
 
 async function getMoviebyId() {
+  
+  if (productDetailPage !== "none") {
+    productDetailPage.innerHTML = `<div class="loading">Loading...</div>`;
+    
   try {
     const api = `https://v2.api.noroff.dev/square-eyes/${id}`;
     const response = await fetch(api);
@@ -23,6 +27,7 @@ async function getMoviebyId() {
   } catch (error) {
     productDetailPage.innerHTML = "<p>Norwegian: ITJ MY Å SJÅ HER!</p>";
   }
+}
 }
 
 getMoviebyId();

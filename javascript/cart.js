@@ -6,6 +6,10 @@ const purchaseButton = document.getElementById("purchase-btn");
 const form = document.getElementById("checkout-form");
 
 async function inCart(cart) {
+
+  if (outElement !== "none") {
+    outElement.innerHTML = `<div class="loading">Loading...</div>`;
+    
   try {
     const api = `https://v2.api.noroff.dev/square-eyes/`;
     const response = await fetch(api);
@@ -29,6 +33,7 @@ async function inCart(cart) {
     console.error(error.message);
     outElement.innerHTML = `<p>Could not fetch data..</p>`;
   }
+}
 }
 
 inCart(cart);
@@ -60,7 +65,7 @@ document.addEventListener("click", function (event) {
 form.addEventListener("submit", function (event) {
   event.preventDefault();
 
-  console.log("Cart Length:", cart.length);
+  //må være mer enn 0 i carten for å kunne gå videre
   if (cart.length > 0) {
     window.location.href = "./checkout-sucsess.html";
   }

@@ -36,15 +36,18 @@ if (!cartStorage) {
 
 console.log(cart);
 
-export function switchCart() {
+export function switchForCart() {
   if (cart.includes(parseInt(this.id))) {
     for (let i = 0; i < cart.length; i++) {
       if (cart[i] === this.id) cart.splice(i, 1);
     }
+
+    this.innerHTML = "Add to &#x1F6D2";
   } else {
     cart.push(this.id);
     this.style.backgroundColor = "white";
     this.style.color = "black";
+    this.innerHTML = "Added to &#x1F6D2";
   }
   localStorage.setItem("cart", JSON.stringify(cart));
 }
@@ -91,7 +94,7 @@ export function movieDetailsPage(api, output) {
     <h2>${product.title}</h2>
     <img src="${product.image.url}" alt="${product.name} Poster">
     <p> ${product.price} NOK</p>
-    <button class="cartButton" id="${product.id}">Add to &#x1F6D2</button> 
+    <button class="cartButton" id="${product.id}">Add to &#x1F6D2</button>
     <p>Genre: ${product.genre}</p>
     <p>Description: ${product.description}</p>
     </div>`;
@@ -99,6 +102,6 @@ export function movieDetailsPage(api, output) {
   const btns = document.querySelectorAll("button.cartButton");
   for (const btn of btns) {
     if (cart.includes(btn.id));
-    btn.addEventListener("click", switchCart);
+    btn.addEventListener("click", switchForCart);
   }
 }
