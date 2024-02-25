@@ -76,13 +76,19 @@ export function listDataToCart(list, out) {
 export function listDataToConfirm(list, out) {
   out.innerHTML = "";
   let newDivs = "";
+  let totalCartConfirm = 0;
   for (let product of list) {
     newDivs += `<div class="cart-style">
         <img src="${product.image.url}" alt="${product.name} Poster">
         <h2>${product.title}</h2>
         <p> ${product.price} NOK</p>
         </div>`;
+    totalCartConfirm += parseFloat(product.price);
   }
+  newDivs += `<div class="cart-price">
+    <h2>Total Price:</h2>
+    <h3>${totalCartConfirm.toFixed(2)} NOK</h3>
+    </div>`;
 
   out.innerHTML = newDivs;
 }
@@ -93,7 +99,7 @@ export function movieDetailsPage(api, output) {
   output.innerHTML = `<div class="product-detail">
     <h2>${product.title}</h2>
     <img src="${product.image.url}" alt="${product.name} Poster">
-    <p> ${product.price} NOK</p>
+    <p class="product-detail-price"> ${product.price} NOK</p>
     <button class="cartButton" id="${product.id}">Add to &#x1F6D2</button>
     <p>Genre: ${product.genre}</p>
     <p>Description: ${product.description}</p>
