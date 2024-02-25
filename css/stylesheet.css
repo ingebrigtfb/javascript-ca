@@ -23,9 +23,9 @@ p {
 .loading {
   text-align: center;
   color: white;
-  font-size: 24px ;
+  font-size: 24px;
   font-weight: 800;
-  margin-top: 80px; 
+  margin-top: 80px;
 }
 
 /*/////////////////////////*/
@@ -148,9 +148,9 @@ footer p {
   opacity: 0.5;
 }
 
-/*/////////////////////////*/
-/*/////// MAIN INDEX /////*/
-/*/////////////////////////*/
+/*/////////////////////*/
+/*/////// Hompage /////*/
+/*/////////////////////*/
 
 .index-container {
   display: flex;
@@ -211,9 +211,9 @@ footer p {
   gap: 25px;
 }
 
-/*/////////////////////////*/
+/*////////////////////////*/
 /*//// ALL MOVIES PAGE ///*/
-/*/////////////////////////*/
+/*////////////////////////*/
 
 .main-all-movies {
   display: flex;
@@ -264,12 +264,6 @@ footer p {
 /*/////Product detail page////*/
 /*////////////////////////////*/
 
-.main-productdetail {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .cartButton {
   background-color: #ff9000;
   color: white;
@@ -289,9 +283,9 @@ footer p {
   align-items: center;
   margin: 0 100px;
 }
-/*///////////////*/
-/*///// Cart ////*/
-/*///////////////*/
+/*////////////////////////*/
+/*///// Cart/Checkout ////*/
+/*////////////////////////*/
 
 .cart-message {
   text-align: center;
@@ -376,9 +370,7 @@ footer p {
   font-weight: 800;
 }
 
-/*////////////////////////////*/
-/*///// CHECKOUT PAGE ////////*/
-/*////////////////////////////*/
+/* More checkout spesific*/
 
 .checkout-cont {
   display: flex;
@@ -668,15 +660,6 @@ footer p {
   /*///// MAIN INDEX TABLET ///*/
   /*///////////////////////////*/
 
-  .bar input {
-    font-size: 16px;
-    width: 300px;
-    height: 30px;
-  }
-
-  .fa-magnifying-glass {
-    margin: 8px;
-  }
   .add {
     width: 572px;
     height: 380px;
@@ -695,22 +678,7 @@ footer p {
   /*//// ALL MOVIES PAGE TABLET ///*/
   /*///////////////////////////////*/
 
-  .bar2 input {
-    font-size: 16px;
-    width: 300px;
-    height: 30px;
-  }
-
-  .fa-magnifying-glass {
-    margin: 8px;
-  }
-
   .select-genre h1 {
-    font-size: 18px;
-  }
-
-  .dropdown label {
-    padding: 2px 20px 2px 20px;
     font-size: 18px;
   }
 
@@ -718,9 +686,9 @@ footer p {
   /*/////Product detail page TABLET////*/
   /*///////////////////////////////////*/
 
-  /*///////////////////////////////////*/
-  /*///// CHECKOUT PAGE TABLET ////////*/
-  /*///////////////////////////////////*/
+  /*//////////////////////////////////////*/
+  /*///// CHECKOUT/CART PAGE TABLET //////*/
+  /*//////////////////////////////////////*/
   #name,
   #card,
   #mmyy,
@@ -732,12 +700,7 @@ footer p {
   #phone,
   #redeem,
   ::placeholder {
-    font-size: 14px;
-  }
-
-  .overlay-box-co {
-    width: 400px;
-    height: 850px;
+    font-size: 16px;
   }
 
   .overlay-box-co p {
@@ -767,24 +730,6 @@ footer p {
     height: 36px;
   }
 
-  .total-box {
-    width: 361px;
-    height: 158px;
-  }
-
-  .upper-info img {
-    width: 36px;
-    height: 52px;
-  }
-
-  .upper-info p {
-    font-size: 16px;
-  }
-
-  .lower-info p {
-    font-size: 16px;
-  }
-
   .purchase-button a {
     font-size: 20px;
   }
@@ -792,11 +737,6 @@ footer p {
   /*///////////////////////////////////*/
   /*// CHECKOUT SUCSESS PAGE TABLET ///*/
   /*///////////////////////////////////*/
-
-  .overlay-box-cos {
-    width: 400px;
-    height: 870px;
-  }
 
   .conf-text p {
     font-size: 16px;
@@ -808,24 +748,6 @@ footer p {
   .overlay-box-cos h1 {
     font-size: 24px;
     padding: 0 10px 0 10px;
-  }
-
-  .total-box2 {
-    width: 361px;
-    height: 158px;
-  }
-
-  .upper-info2 img {
-    width: 36px;
-    height: 52px;
-  }
-
-  .upper-info2 p {
-    font-size: 16px;
-  }
-
-  .lower-info2 p {
-    font-size: 16px;
   }
 
   /*//////////////////////////////*/
@@ -892,7 +814,7 @@ footer p {
 /*/ DESKTOP MEDIA QUARIES /*/
 /*/////////////////////////*/
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 820px) {
   /*/////////////////////////*/
   /*///// HEADER DESKTOP ////*/
   /*/////////////////////////*/
@@ -961,21 +883,6 @@ footer p {
   /*/// MAIN INDEX DESKTOP //*/
   /*/////////////////////////*/
 
-  .bar input {
-    font-size: 18px;
-    width: 616px;
-    height: 35px;
-    padding-left: 30px;
-  }
-
-  .bar input::placeholder {
-    font-size: 18px;
-  }
-
-  .fa-magnifying-glass {
-    margin: 9px;
-  }
-
   .add {
     width: 785px;
     height: 524px;
@@ -990,31 +897,29 @@ footer p {
     max-width: 400px;
   }
 
+  .index-container h2 {
+    font-size: 28px;
+  }
+  #movieTop {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin: 0 auto 50px auto;
+    gap: 25px;
+  }
+
   /*////////////////////////*/
   /*// ALL MOVIES DESKTOP //*/
   /*////////////////////////*/
-
-  .bar2 input {
-    font-size: 18px;
-    width: 616px;
-    height: 35px;
-  }
-
-  .bar2 input::placeholder {
-    font-size: 18px;
-  }
-
-  .fa-magnifying-glass {
-    margin: 9px;
-  }
 
   .select-genre h1 {
     font-size: 22px;
   }
 
-  .dropdown label {
-    padding: 4px 30px 4px 30px;
-    font-size: 20px;
+  #movieList {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin: 0 auto;
+    gap: 20px;
   }
 
   /*////////////////////////////*/
@@ -1022,13 +927,9 @@ footer p {
   /*////////////////////////////*/
 
   /*////////////////////////////*/
-  /*///// CHECKOUT PAGE ////////*/
+  /*///// CHECKOUT/Cart page ///*/
   /*////////////////////////////*/
 
-  .overlay-box-co {
-    width: 800px;
-    height: 950px;
-  }
 
   .overlay-box-co h1 {
     font-size: 36px;
@@ -1043,7 +944,7 @@ footer p {
   #fullname,
   #address,
   #phone {
-    width: 520px;
+    width: 361px;
     height: 40px;
   }
 
@@ -1052,43 +953,22 @@ footer p {
   #zipcode,
   #city,
   #redeem {
-    width: 251px;
+    width: 171px;
     height: 40px;
   }
 
-  .total-box {
-    width: 520px;
-    height: 160px;
-  }
 
-  .upper-info img {
-    width: 42px;
-    height: 58px;
-    padding: 10px 0 20px 0;
+  .cart-cont {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    gap: 20px;
   }
+  
 
-  .upper-info p {
-    padding-top: 5px;
-    font-size: 20px;
-    font-weight: 600;
-  }
-
-  .lower-info {
-    gap: 170px;
-    padding-top: 5px;
-  }
-
-  .lower-info p {
-    font-size: 20px;
-    font-weight: 600;
-  }
-
-  .purchase-button {
+  #purchase-btn {
     margin-top: 40px;
-  }
-
-  .purchase-button a {
-    font-size: 28px;
+    font-size: 18px;
   }
 
   /*///////////////////////////////////*/
@@ -1096,12 +976,16 @@ footer p {
   /*///////////////////////////////////*/
 
   .overlay-box-cos {
-    width: 800px;
-    height: 1000px;
+    width: 900px;
+    height: auto;
+  }
+
+  .overlay-box-cos h1 {
+    font-size: 28px;
   }
 
   .conf-text p {
-    font-size: 24px;
+    font-size: 20px;
     padding-left: 40px;
     padding-right: 40px;
   }
@@ -1109,34 +993,11 @@ footer p {
     font-size: 85px;
   }
 
-  .overlay-box-cos h1 {
-    font-size: 36px;
-    padding: 0 10px 0 10px;
+  .cart-style h2 {
+    font-size: 16px;
   }
 
-  .total-box2 {
-    width: 520px;
-    height: 160px;
-    margin-top: 30px;
-  }
 
-  .upper-info2 img {
-    width: 42px;
-    height: 58px;
-  }
-
-  .upper-info2 p {
-    font-size: 20px;
-  }
-
-  .lower-info2 p {
-    font-size: 20px;
-  }
-
-  .lower-info2 {
-    gap: 170px;
-    padding-top: 5px;
-  }
 
   /*////////////////////////*/
   /*/////ABOUT US PAGE/////*/
@@ -1230,7 +1091,7 @@ footer p {
   }
 
   body {
-    height: 1300px;
+    height: auto;
   }
 
   .coming-soon p {
