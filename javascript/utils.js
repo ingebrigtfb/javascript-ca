@@ -34,7 +34,7 @@ if (!cartStorage) {
   cart = JSON.parse(cartStorage);
 }
 
-console.log(cart);
+//console.log(cart);
 
 export function switchForCart() {
   if (cart.includes(parseInt(this.id))) {

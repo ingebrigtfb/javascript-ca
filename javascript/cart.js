@@ -1,5 +1,5 @@
 import { listDataToCart, cart } from "./utils.js";
-console.log("cart:", cart);
+//console.log("cart:", cart);
 
 const outElement = document.getElementById("cart-container");
 const purchaseButton = document.getElementById("purchase-btn");
@@ -9,18 +9,18 @@ async function inCart(cart) {
 
   if (outElement !== "none") {
     outElement.innerHTML = `<div class="loading">Loading...</div>`;
-    
+
   try {
     const api = `https://v2.api.noroff.dev/square-eyes/`;
     const response = await fetch(api);
-    console.log(response);
+    //console.log(response);
     const data = await response.json();
-    console.log("Data:", data);
+    //console.log("Data:", data);
     let filtered = data.data.filter((item) => {
       let id = item.id;
       return cart.includes(id);
     });
-    console.log("Filtered Collection", filtered);
+    //console.log("Filtered Collection", filtered);
     if (filtered.length > 0) {
       listDataToCart(filtered, outElement);
       purchaseButton.disabled = false;
