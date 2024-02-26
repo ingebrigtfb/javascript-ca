@@ -925,7 +925,9 @@ footer p {
   /*////////////////////////////*/
   /*/////Product detail page////*/
   /*////////////////////////////*/
-
+  .product-detail p {
+    margin: 20px 200px;
+  }
   /*////////////////////////////*/
   /*///// CHECKOUT/Cart page ///*/
   /*////////////////////////////*/
@@ -1068,7 +1070,9 @@ footer p {
   .nav-cont a {
     font-size: 24px;
   }
+
 }
+
 
 /*////////////////////////*/
 /*//// 1198px DESKTOP ////*/
@@ -1099,5 +1103,9 @@ footer p {
     font-weight: 200;
     padding-left: 150px;
     padding-right: 150px;
+  }
+
+  .product-detail {
+    margin: 20px 300px;
   }
 }
