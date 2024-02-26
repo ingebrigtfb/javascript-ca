@@ -6,7 +6,7 @@ let idForMovie = [];
 let argum = new URL(document.location).searchParams;
 
 let id = argum.get("id");
-console.log(id);
+//console.log(id);
 
 async function getMoviebyId() {
   
