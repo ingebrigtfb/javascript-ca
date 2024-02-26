@@ -69,4 +69,5 @@ form.addEventListener("submit", function (event) {
   if (cart.length > 0) {
     window.location.href = "./checkout-sucsess.html";
   }
+
 });
