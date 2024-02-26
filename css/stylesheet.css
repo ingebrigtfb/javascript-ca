@@ -8,10 +8,12 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-h1, h2, h3, p {
+h1,
+h2,
+h3,
+p {
   color: #fafafa;
 }
-
 
 .loading {
   text-align: center;
@@ -362,8 +364,6 @@ footer p {
   text-align: center;
 }
 
-
-
 .cart-price h2,
 .cart-price p {
   font-size: 16px;
@@ -547,10 +547,6 @@ footer p {
 /*/////////////////////////*/
 /*/////CONTACT US PAGE/////*/
 /*/////////////////////////*/
-
-.body-contact-us {
-  background-image: url(./Pictures/photo\ family.jpg);
-}
 
 .main-contact {
   background-color: rgb(26, 26, 26, 0.9);
@@ -932,7 +928,6 @@ footer p {
   /*///// CHECKOUT/Cart page ///*/
   /*////////////////////////////*/
 
-
   .overlay-box-co h1 {
     font-size: 36px;
   }
@@ -959,14 +954,12 @@ footer p {
     height: 40px;
   }
 
-
   .cart-cont {
     display: flex;
     flex-direction: row;
     margin: 0 auto;
     gap: 20px;
   }
-  
 
   #purchase-btn {
     margin-top: 40px;
@@ -998,8 +991,6 @@ footer p {
   .cart-style h2 {
     font-size: 16px;
   }
-
-
 
   /*////////////////////////*/
   /*/////ABOUT US PAGE/////*/
@@ -1070,9 +1061,7 @@ footer p {
   .nav-cont a {
     font-size: 24px;
   }
-
 }
-
 
 /*////////////////////////*/
 /*//// 1198px DESKTOP ////*/
