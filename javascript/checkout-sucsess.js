@@ -8,7 +8,7 @@ async function cartConfirm(cart) {
     const response = await fetch(api);
     //console.log(response);
     const data = await response.json();
-    console.log("Data:", data);
+    //console.log("Data:", data);
     let filtered = data.data.filter((item) => {
       let id = item.id;
       return cart.includes(id);
